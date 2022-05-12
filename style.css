@@ -96,21 +96,30 @@ section footer{
 
 
 /* trangchu */
-h1 {
+h1{
+    margin-bottom: 40px;
     border: 0;
     padding-top: 100px;
     text-align: center;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    color: #3d6599;
+    color: #303030;
 }
+
 .h1_trangchu {
     margin-bottom: 40px;
+    border: 0;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    color: #3d6599;
 }
 .h3_trangchu {
     border: 0;
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
     font-size: 26px;
     font-style: normal;
@@ -178,11 +187,7 @@ h1 {
 .col3:hover{
     transform: scale(1.05, 1.05);
 }
-.tittle3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-li{
+.li_trangchu{
     line-height: 30px;
 }
 
