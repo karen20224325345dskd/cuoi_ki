@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* header */
-section {
+section{
     position: relative;
     width: 100%;
     min-height: 100px;
@@ -14,7 +14,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    /* background: #fff; */
 }
 header {
     position: absolute;
@@ -25,7 +25,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+.ctulogo {
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease-in-out;
+}
+.ctulogo:hover{
+    transform: scale(1.3);
+}
+a .ctulogo{
+    margin:0px 10px;
+}
+.githublogo {
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease-in-out;
+}
+.githublogo:hover{
+    transform: scale(1.3);
+}
+a .githublogo{
+    margin:0px 10px;
 }
 header ul {
     position: relative;
@@ -39,9 +61,11 @@ header ul li {
 header ul li a {
     display: inline-block;
     color: #555;
-    font-weight: 400;
-    padding: 1rem 1.5rem;
+    font-weight: 450;
+    font-size: large;
+    padding: 1rem 3.5rem;
     text-decoration: none;
+    transition: all .3s ease-in-out;
     
 }
 header ul li a:hover{
@@ -50,18 +74,100 @@ header ul li a:hover{
 }
 header ul li a:active {
     background-color: #3e8e41;
-    box-shadow: 0 5px #3e8e41;
+    box-shadow: 1px 5px #3e8e41;
     transform: translateY(5px);
 }
 
+/* footer */
+
+section footer{
+    position: fixed;   
+    bottom: 5px;   
+    width: 100%;  
+    background-color: gray;  
+    color: white;  
+    text-align: center;  
+}
+
 /* body */
+
+
 h1 {
     border: 0;
     margin: 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
     color: #333;
+}
+.tittle {
+    margin-bottom: 40px;
+}
+h3 {
+    border: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    color: #333;
+}
+.row{
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
 
+}
+.luudo{
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    
+
+}
+.col1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #999;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+    padding: 10px;
+}
+.col2 {
+    min-width: 450px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 2px solid #999;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+    padding: 10px 50px 50px 50px;
+}
+.col3 {
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 2px solid #999;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    padding: 10px 50px 50px 50px;
+}
+.col1:hover{
+    transform: scale(1.05, 1.05);
+}
+.col2:hover{
+    transform: scale(1.05, 1.05);
+}
+.col3:hover{
+    transform: scale(1.05, 1.05);
+}
+.tittle3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+li{
+    line-height: 30px;
 }
