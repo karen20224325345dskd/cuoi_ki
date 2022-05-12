@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    background: rgb(130, 130, 130);
+    background: rgb(148, 145, 145);
 
 }
 .ctulogo {
@@ -72,7 +72,7 @@ header ul li a {
 }
 header ul li a:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(89, 83, 83);
+    background-color: rgb(83, 78, 78);
 }
 header ul li a:active{
     background-color: #348136;
@@ -103,7 +103,7 @@ h1{
     text-align: center;
     font-size: 32px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     color: #303030;
 }
 
@@ -123,14 +123,14 @@ h1{
     text-align: center;
     font-size: 26px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 250;
     color: #658ec6;
 }
 .ul_trangchu{
     color: #658ec6;
     margin: 20px 0;
 }
-.row{
+.row_trangchu{
     min-height: 500px;
     display: flex;
     justify-content: space-between;
@@ -146,7 +146,7 @@ h1{
 .luudo:hover{
     transform: scale(1.05, 1.05);
 }
-.col1 {
+.col1_trangchu {
     margin-left: 20px;
     margin-top: 10px;
     border-radius: 20px;
@@ -156,7 +156,7 @@ h1{
     padding: 10px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
-.col2 {
+.col2_trangchu {
     min-width: 470px;
     margin-top: 10px;
     margin-left: 20px;
@@ -168,7 +168,7 @@ h1{
     padding: 10px 50px 50px 50px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
-.col3 {
+.col3_trangchu {
     margin-top: 10px;
     margin-right: 20px;
     border-radius: 20px;
@@ -178,23 +178,54 @@ h1{
     padding: 10px 50px 50px 50px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
-.col1:hover{
+.col1_trangchu:hover{
     transform: scale(1.05, 1.05);
 }
-.col2:hover{
+.col2_trangchu:hover{
     transform: scale(1.05, 1.05);
 }
-.col3:hover{
+.col3_trangchu:hover{
     transform: scale(1.05, 1.05);
 }
 .li_trangchu{
     line-height: 30px;
+    text-align: justify;
 }
 
 /* thuchien */
 
 
 /* capnhat */
-
+.row_capnhat{
+    margin: 10px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.refresh{
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    
+}
+.refresh_button {
+    border-radius: 5px;
+    border: 2px solid rgb(106, 103, 103);
+    min-width: 80px;
+    min-height: 40px;
+    font-size: 17px;
+    font-weight: 300;
+    transition: all .2s ease-in-out;
+}
+.refresh_button:hover{
+    color: aliceblue;
+    background-color: #303030;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+.refresh_button:active{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
 
 /* bieudo */
