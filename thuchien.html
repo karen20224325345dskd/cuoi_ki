@@ -16,11 +16,10 @@
             background-color: rgb(16, 164, 115);
         }
         
-
     </style>
 </head>
 <body>
-    <section>
+    <section class="sec_head">
         <header>
             <a href="https://www.ctu.edu.vn/"><img class="ctulogo" src="./img/ctu.png" alt="ctu"></a>
             <ul>
@@ -36,10 +35,68 @@
     </section> 
       
     <h1 class="tittle">Trạm thời tiết mini với cảm biến BMP280</h1>
-    <section>
-        
+    
+    <section >
+        <h3>Tổng quan về ESP8266</h3>
+        <p>
+            ESP8266 là một chip của Espressif Systems có tích hợp công nghệ Wi-Fi với đặc tính giá rẻ, tương thích 
+            với nhiều nền tảng. Nó thường được sử dụng trong các board mạch smart home giá rẻ như Sonoff Basic và 
+            các công tắc Wi-Fi. Module sơ khai nhất của ESP8266 là ESP-01.
+        </p>
+        <img src="./img/espthuc.png" alt="">
+        <ul>
+            <li>Điện áp hoạt động: 3.3V</li>
+            <li>Bộ xử lý: Lõi vi xử lý L106 32-bit RISC dựa trên tiêu chuẩn Tensilica Xtensa Diamond, 
+                hoạt động ở tần số 80 MHz và SRAM trên chip.</li>
+            <li>17 chân GPIO: Các chân có thể được dồn kênh cho các chức năng I²C, 
+                I2S, UART, PWM, IR - điều khiển từ xa,...</li>
+            <li>2 hardware timer 23 bit: FRC1 và FRC2.</li>
+            <li>3 SPI: general Slave/Master SPI, Slave SDIO/SPI và general Slave/Master HSPI.</li>
+            <li>I²C: Hỗ trợ 1 I²C hoạt động được ở cả chế độ master và slave. 
+                Các GPIO đều có thể được cấu hình cho các chân SDA hay SCL của I²C bằng phần mềm.</li>
+            <li>Giao diện I²S với DMA (sử dụng chung chân với GPIO)</li>
+            <li>UART: Hỗ trợ 2 UART là UART0 và UART1.</li>
+            <li>ADC 10 bit</li>
+            <li>WiFi: 2.4 GHz hỗ trợ chuẩn 802.11 b/g/n</li>
+        </ul>
+        <img src="./img/esppinout.png" alt="">
     </section>
     
+    <section>
+        <h3>Tổng quan về BMP280</h3>
+        <p>
+            Cảm biến áp suất I2C BMP280 3.3V với chi phí thấp, độ chính xác cao, tiêu thụ điện năng thấp rất phù hợp 
+            với những ứng dụng thiết bị di động. Cảm biến áp suất IIC I2C có thể đo được áp suất khí quyển với độ chính 
+            xác ± 12 hPa và đo được nhiệt độ với độ chính xác ± 1.0°C. Ngoài ra, cảm biến còn có thể đo được độ cao 
+            (ứng dụng việc áp suất khí quyển thay đổi theo độ cao).
+        </p>
+        <img src="./img/bmp.jpg" alt="">
+        <h5>Thông số kĩ thuật</h5>
+        <ul>
+            <li>Khoản đo áp suất : 300-1100 hPa ( tương ứng với + 9000 …- 500m so với mặt nước biển)</li>
+            <li>Độ chính xác tương đối ± 12 hPa (tương ứng với ± 1 m 950 ~ 1050hPa @ 25°C)</li>
+            <li>Độ chính xác tuyệt đối : ± 1 hPa (950 … 1050 hPa, 0 ~+ 40 ° C)</li>
+            <li>Khoản đo nhiệt độ: -40 - + 85 ° C</li>
+            <li>Điện áp hoạt động: 3.3.</li>
+            <li>Dòng tiêu thụ: 0,6 mA</li>
+            <li>Kích thước 11.5 x 14.5mm</li>
+        </ul>
+    </section>
+        <h3>Thiết kế mạch điện</h3>
+        <img src="./img/machthietke.png" alt="">
+    <section>
+
+    <section>
+        <h3>Lập trình</h3>
+        <p>Thực hiện lập trình cho ESP8266 thông qua phần mềm Arduino IDE</p>
+        <p>Code chương trình:</p>
+        <pre>
+            <!-- code -->
+        </pre>
+    </section>
+
+    </section>
+
     <section>
         <footer>
             <p>Copyright &copy; 2022 - Nhóm 4 - All Right Reserved.</p>

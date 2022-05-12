@@ -15,12 +15,15 @@
             color:rgb(255, 255, 255);
             background-color: rgb(16, 164, 115);
         }
+        body{
+            background-image: linear-gradient(to top right, rgb(150, 228, 214), rgb(157, 235, 247));
+        }
         
 
     </style>
 </head>
 <body>
-    <section>
+    <section class="sec_head">
         <header>
             <a href="https://www.ctu.edu.vn/"><img class="ctulogo" src="./img/ctu.png" alt="ctu"></a>
             <ul>
@@ -35,16 +38,16 @@
         </header>
     </section> 
       
-    <h1 class="tittle">Trạm thời tiết mini với cảm biến BMP280</h1>
+    <h1 class="h1_trangchu">Trạm thời tiết mini với cảm biến BMP280</h1>
     <section>
         <div class="row">
             <div class="col1">
-                <h3 class="tittle3">Sơ đồ tổng quan</h3>
+                <h3 class="h3_trangchu">Sơ đồ tổng quan</h3>
                 <img class="luudo" src="./img/luudo.png" alt="sơ đồ tổng quan">
             </div>
             <div class="col2">
-                <h3 class="tittle3">Các trang web sẽ thực hiện</h3>
-                <ul>
+                <h3 class="h3_trangchu">Các trang web sẽ thực hiện</h3>
+                <ul class="ul_trangchu">
                     <li>Trang chủ: Giới thiệu tổng quan về đề tài</li>
                     <li>Thực hiện: Tổng quan phần cứng và phần mềm thực hiện</li>
                     <li>Cập nhật: Hiển thị nhiệt độ, áp suất hiện tại và có thể cập nhật khi ấn nút</li>
@@ -55,8 +58,8 @@
                 </ul>
             </div>
             <div class="col3">
-                <h3 class="tittle3">Mô tả</h3>
-                <ul>
+                <h3 class="h3_trangchu">Mô tả</h3>
+                <ul class="ul_trangchu">
                     <li>
                         Nhóm sẽ sử dụng ESP8266 để thực hiện đọc dữ liệu từ cảm biến và gửi lên server Thingspeak. 
                         Sau đó sẽ thiết kế website đọc dữ liệu từ Thingspeak để hiển thị kết quả

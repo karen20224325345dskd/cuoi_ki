@@ -6,15 +6,15 @@
 }
 
 /* header */
-section{
-    position: relative;
+.sec_head{
+    position: fixed;
     width: 100%;
     min-height: 100px;
     padding: 0px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #fff; */
+    
 }
 header {
     position: absolute;
@@ -26,6 +26,8 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    background: rgb(130, 130, 130);
+
 }
 .ctulogo {
     width: 40px;
@@ -60,7 +62,7 @@ header ul li {
 }
 header ul li a {
     display: inline-block;
-    color: #555;
+    color: rgb(254, 254, 254);
     font-weight: 450;
     font-size: large;
     padding: 1rem 3.5rem;
@@ -70,18 +72,19 @@ header ul li a {
 }
 header ul li a:hover{
     color: rgb(255, 255, 255);
-    background-color: gray;
+    background-color: rgb(89, 83, 83);
 }
-header ul li a:active {
-    background-color: #3e8e41;
-    box-shadow: 1px 5px #3e8e41;
+header ul li a:active{
+    background-color: #348136;
+    box-shadow: 1px 5px #348136;
     transform: translateY(5px);
 }
 
 /* footer */
 
 section footer{
-    position: fixed;   
+    position: fixed; 
+    margin-bottom: 5px;
     bottom: 5px;   
     width: 100%;  
     background-color: gray;  
@@ -91,27 +94,32 @@ section footer{
 
 /* body */
 
+
 /* trangchu */
 h1 {
     border: 0;
-    margin: 0;
+    padding-top: 100px;
     text-align: center;
     font-size: 32px;
     font-style: normal;
-    font-weight: 350;
-    color: #333;
+    font-weight: 400;
+    color: #3d6599;
 }
-.tittle {
+.h1_trangchu {
     margin-bottom: 40px;
 }
-h3 {
+.h3_trangchu {
     border: 0;
-    margin: 0;
+    margin: 10px 0;
     text-align: center;
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
-    color: #333;
+    color: #658ec6;
+}
+.ul_trangchu{
+    color: #658ec6;
+    margin: 20px 0;
 }
 .row{
     min-height: 500px;
@@ -123,37 +131,43 @@ h3 {
     margin-top: 30px;
     width: 500px;
     height: 300px;
-    
-
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+.luudo:hover{
+    transform: scale(1.05, 1.05);
 }
 .col1 {
     margin-left: 20px;
     margin-top: 10px;
     border-radius: 20px;
-    border: 2px solid #999;
+    border: 2px solid rgb(139, 194, 177);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     transition: all .2s ease-in-out;
     padding: 10px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
 .col2 {
-    min-width: 450px;
+    min-width: 470px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
-    border: 2px solid #999;
+    border: 2px solid rgb(139, 194, 177);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     transition: all .2s ease-in-out;
     padding: 10px 50px 50px 50px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
 .col3 {
     margin-top: 10px;
     margin-right: 20px;
     border-radius: 20px;
-    border: 2px solid #999;
+    border: 2px solid rgb(139, 194, 177);
     transition: all .2s ease-in-out;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     padding: 10px 50px 50px 50px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
 .col1:hover{
     transform: scale(1.05, 1.05);
