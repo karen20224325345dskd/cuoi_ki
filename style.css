@@ -207,7 +207,7 @@ h1{
     display: flex;
     
 }
-.refresh_button {
+.refresh_capnhat {
     border-radius: 5px;
     border: 2px solid rgb(106, 103, 103);
     min-width: 80px;
@@ -216,16 +216,24 @@ h1{
     font-weight: 300;
     transition: all .2s ease-in-out;
 }
-.refresh_button:hover{
+.refresh_capnhat:hover{
     color: aliceblue;
     background-color: #303030;
     font-weight: 300;
     font-size: 18px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
-.refresh_button:active{
+.refresh_capnhat:active{
     transform: scale(1.05, 1.05);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 /* bieudo */
+.chart {
+    display: flex;
+    background-color: aliceblue;
+}
+.refresh_bieudo{
+    display: flex;
+    justify-content: center;
+}
