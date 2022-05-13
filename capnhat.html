@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="refresh">
-            <button class="refresh_capnhat" type="button">Refresh</button>
+            <button class="refresh_capnhat" type="button" onclick ="refresh()">Refresh</button>
         </div>
     </section>
     
@@ -56,5 +56,17 @@
             <p>Copyright &copy; 2022 - Nhóm 4 - All Right Reserved.</p>
         </footer>
     </section>
+    
+    
+    <script>
+        function refresh() {
+            var request = new XMLHttpRequest();
+            var urlHere = "https://api.thingspeak.com/update?";
+            // add write API key
+            urlHere = urlHere + "api_key=DM02SEJGCBE6FNG0&field3=1";
+            request.open('GET', urlHere, true);
+            request.send(); 
+        }
+    </script>
 </body>
 </html>
