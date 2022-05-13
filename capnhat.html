@@ -18,8 +18,53 @@
         
 
     </style>
+
+    <script>
+        function refresh() {
+            var request = new XMLHttpRequest();
+            var urlHere = "https://api.thingspeak.com/update?";
+            // add write API key
+            urlHere = urlHere + "api_key=DM02SEJGCBE6FNG0&field3=1";
+            request.open('GET', urlHere, true);
+            request.send(); 
+        }
+
+
+        function hienthi() {
+        var request = new XMLHttpRequest();
+        var urlHere = "https://api.thingspeak.com/update?";
+        urlHere = "https://api.thingspeak.com/channels/1713269/feeds.json";
+        request.open('GET', urlHere, true);
+        request.onload = function() {
+            if (request.status == 200) {
+                
+                var data = JSON.parse(request.responseText);
+                var length = data.feeds.length; 
+                
+                nhietdo = new Array();
+                apsuat = new Array();
+                
+                for(i=0;i<length;i++){
+                    if (data.feeds[i].field1 != null){
+                    nhietdo.push(data.feeds[i].field1);
+                }
+                    if (data.feeds[i].field2 != null){
+                    apsuat.push(data.feeds[i].field2);
+                }
+                }
+                var len = nhietdo.length
+                document.getElementById("hienthi_nhietdo").innerHTML = "hien thi nhiet do: "+ nhietdo[len-1] + " <sup>o</sup>C";
+                document.getElementById("hienthi_apsuat").innerHTML = "hien thi ap suat: " + apsuat[len-1] + " Bar";
+
+                } else {
+                // We reached our target server, but it returned an error
+                }
+            };
+            request.send();
+        }
+    </script>
 </head>
-<body>
+<body onload="hienthi()">
     <section class="sec_head">
         <header>
             <a href="https://www.ctu.edu.vn/"><img class="ctulogo" src="./img/ctu.png" alt="ctu"></a>
@@ -41,9 +86,11 @@
         <div class="row_capnhat">
             <div class="col1_capnhat">
                 <h3>Nhiệt độ</h3>
+                <p id="hienthi_nhietdo"></p>
             </div>
             <div class="col2_capnhat">
                 <h3>Áp suất</h3>
+                <p id="hienthi_apsuat"></p>
             </div>
         </div>
         <div class="refresh">
@@ -57,16 +104,5 @@
         </footer>
     </section>
     
-    
-    <script>
-        function refresh() {
-            var request = new XMLHttpRequest();
-            var urlHere = "https://api.thingspeak.com/update?";
-            // add write API key
-            urlHere = urlHere + "api_key=DM02SEJGCBE6FNG0&field3=1";
-            request.open('GET', urlHere, true);
-            request.send(); 
-        }
-    </script>
 </body>
 </html>
