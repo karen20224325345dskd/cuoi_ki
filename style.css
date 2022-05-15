@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 100;
     
 }
 header {
@@ -28,7 +28,7 @@ header {
     align-items: center;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     background: rgb(148, 145, 145);
-    z-index: 5;
+    z-index: 100;
 
 }
 .ctulogo {
