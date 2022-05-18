@@ -28,7 +28,7 @@ header {
     align-items: center;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     background: rgb(148, 145, 145);
-    z-index: 100;
+    z-index: 1;
 
 }
 .ctulogo {
@@ -194,17 +194,40 @@ h1{
     text-align: justify;
 }
 
+
 /* thuchien */
+.tongquan{
+    margin: 10px 200px;
+    line-height: 1.8;
+}
+.tongquan ul li{
+    margin: 0 30px;
+}
+.esp img{
+    margin: 30px 50px;
+    width: 600px;
+    justify-content: center;
+
+}
+.bmp img{
+    margin: 20px 100px;
+    width: 300px;
+}
+.laptrinh{
+    margin: 10px 200px;
+    line-height: 1.8;
+}
 
 
 /* capnhat */
 .row_capnhat{
-    margin: 10px 300px;
+    margin: 80px 300px;
     display: flex;
     justify-content: space-between;
+
 }
 .refresh{
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: center;
     display: flex;
     
@@ -229,13 +252,81 @@ h1{
     transform: scale(1.05, 1.05);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
+#hienthi_nhietdo{
+    margin-top: 10px;
+}
+#hienthi_apsuat{
+    margin-top: 10px;
+}
+.col1_capnhat{
+    background-color: #8dc57e;
+    color: aliceblue;
+    padding: 50px 100px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+.col2_capnhat{
+    background-color: #8dc57e;
+    color: aliceblue;
+    padding: 50px 100px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+.col1_capnhat:hover{
+    transform: scale(1.05, 1.05);
+}
+.col2_capnhat:hover{
+    transform: scale(1.05, 1.05);
+}
+
 
 /* bieudo */
 .chart {
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 .refresh_bieudo{
     display: flex;
     justify-content: center;
+}
+.refresh_bieudo_button{
+    border-radius: 5px;
+    border: 2px solid rgb(106, 103, 103);
+    min-width: 80px;
+    min-height: 40px;
+    font-size: 17px;
+    font-weight: 300;
+    transition: all .2s ease-in-out;
+}
+.refresh_bieudo_button:hover{
+    color: aliceblue;
+    background-color: #303030;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+.bieudo_nhietdo {
+    min-width: 50%;
+}
+.bieudo_apsuat {
+    min-width: 50%;
+}
+.tittle_chart {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+#chartNhietdo{
+    transition: all .5s ease-in-out;
+}
+#chartNhietdo:hover{
+    transform: scale(1.1);
+}
+#chartApsuat{
+    transition: all .5s ease-in-out;
+}
+#chartApsuat:hover{
+    transform: scale(1.1);
 }

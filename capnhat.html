@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="refresh" content="30"> -->
     <style>
         .capnhat {
             color:rgb(255, 255, 255);
@@ -27,6 +28,16 @@
             urlHere = urlHere + "api_key=DM02SEJGCBE6FNG0&field3=1";
             request.open('GET', urlHere, true);
             request.send(); 
+            
+            // message
+            alert('Dữ liệu đang cập nhật. Vui lòng đợi khoảng 30 giây!');
+            
+            // delay 30s
+            setTimeout(function() {
+                // load page
+                window.location.reload();
+            }, 30000);
+
         }
 
 
@@ -53,8 +64,8 @@
                 }
                 }
                 var len = nhietdo.length
-                document.getElementById("hienthi_nhietdo").innerHTML = "hien thi nhiet do: "+ nhietdo[len-1] + " <sup>o</sup>C";
-                document.getElementById("hienthi_apsuat").innerHTML = "hien thi ap suat: " + apsuat[len-1] + " Bar";
+                document.getElementById("hienthi_nhietdo").innerHTML = nhietdo[len-1] + " <sup>o</sup>C";
+                document.getElementById("hienthi_apsuat").innerHTML = apsuat[len-1] + " Bar";
 
                 } else {
                 // We reached our target server, but it returned an error
@@ -80,17 +91,25 @@
         </header>
     </section> 
     
-    <!--
+    
     <h1 class="tittle">Trạm thời tiết mini với cảm biến BMP280</h1>
     
     <section>
         <div class="row_capnhat">
             <div class="col1_capnhat">
-                <h3>Nhiệt độ</h3>
+                <h3 style="text-align: center; 
+                margin-bottom: 10px; 
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 250;">Nhiệt độ</h3>
                 <p id="hienthi_nhietdo"></p>
             </div>
             <div class="col2_capnhat">
-                <h3>Áp suất</h3>
+                <h3 style="text-align: center; 
+                margin-bottom: 10px;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 250;">Áp suất</h3>
                 <p id="hienthi_apsuat"></p>
             </div>
         </div>
@@ -98,7 +117,7 @@
             <button class="refresh_capnhat" type="button" onclick ="refresh()">Refresh</button>
         </div>
     </section>
-    -->
+    
 
     <section>
         <footer>

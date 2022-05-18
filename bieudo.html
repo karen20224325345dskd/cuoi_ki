@@ -34,7 +34,7 @@
                     var data = JSON.parse(request.responseText);
                     // //console.log(data);
                     var length = data.feeds.length;  //kich thuoc du lieu
-                    // Ve bieu đồ nhập xuất
+
                     var yNhietdo = new Array();
                     var yApsuat = new Array();
                     var xNhietdo = new Array();
@@ -58,7 +58,7 @@
                             {
                                 fill: false,
                                 backgroundColor: "red",
-                                label: "Nhiet do",
+                                label: "Nhiệt độ",
                                 data: yNhietdo,
                             }, 
                             ]
@@ -88,7 +88,7 @@
                             {
                                 fill: false,
                                 backgroundColor: "blue",
-                                label: "Ap suat",
+                                label: "Áp suất",
                                 data: yApsuat,
                             }, 
                             ]
@@ -139,20 +139,24 @@
         </header>
     </section> 
     
-    <!--
+    
     <h1 class="tittle">Trạm thời tiết mini với cảm biến BMP280</h1>
     <section>
-        <form name="refresh_bieudo" class="refresh_bieudo">
-            <input type = "button" value = "Refresh" onclick = "bieudo()">
-        </form>
+        <div class="refresh_bieudo">
+            <button class="resfresh_bieudo_button" type = "button" onclick = "bieudo()">Refresh</button>
+        </div>
         <section class="chart">    
-            <p>Nhietdo</p>
-            <canvas id="chartNhietdo" style="width:100%;max-width:700px"></canvas>
-            <p>Apsuat</p>
-            <canvas id="chartApsuat" style="width:100%;max-width:700px"></canvas>
+            <section class="bieudo_nhietdo">
+                <p class="tittle_chart">Nhiệt độ</p>
+                <canvas id="chartNhietdo" style="width:100%;max-width:700px"></canvas>
+            </section>
+            <section class="bieudo_apsuat">
+                <p class="tittle_chart">Áp suất</p>
+                <canvas id="chartApsuat" style="width:100%;max-width:700px"></canvas>
+            </section>
         </section>
     </section>
-    -->
+    
 
     <section>
         <footer>
