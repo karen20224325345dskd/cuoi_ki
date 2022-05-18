@@ -217,7 +217,14 @@ h1{
     margin: 10px 200px;
     line-height: 1.8;
 }
-
+.link_code{
+    color: #060ba4;
+    text-decoration: none;
+}
+.link_code:hover{
+    color: #348136;
+    text-decoration: underline;
+}
 
 /* capnhat */
 .row_capnhat{
